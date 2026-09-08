@@ -16,7 +16,7 @@ The objective of this project is to practice the methodology used during a penet
 
 The project also incorporates a Blue Team perspective by documenting the security implications of discovered vulnerabilities and identifying appropriate remediation and detection opportunities.
 
----
+------
 
 ## Lab Environment
 
@@ -30,7 +30,7 @@ The project also incorporates a Blue Team perspective by documenting the securit
 | Network | Isolated Virtual Lab |
 | Target OS | Linux 2.6.x |
 
----
+------
 
 ## Authorization
 
@@ -38,7 +38,7 @@ All testing documented in this repository was performed against an intentionally
 
 **No unauthorized systems were targeted.**
 
----
+------
 
 ## 1. Reconnaissance
 
@@ -59,7 +59,7 @@ Nmap identified the target as:
 - **Hostname:** metasploitable.localdomain
 - **Virtual NIC:** Oracle VirtualBox
 
----
+------
 
 ## 2. Discovered Services
 
@@ -87,7 +87,7 @@ The initial scan identified a large number of exposed services.
 
 **The number of exposed services demonstrates that the target has a very large attack surface.**
 
----
+------
 
 ## 3. SMB Enumeration
 
@@ -133,7 +133,7 @@ Several security concerns were identified:
 - Restrict SMB access using host-based and network-level firewall rules
 - Monitor authentication and SMB activity through centralized logging
 
----
+------
 
 ## 4. NFS Enumeration
 
@@ -179,7 +179,7 @@ sudo mount -t nfs -o ro,nolock 172.30.1.21:/ /mnt/metasploitable-nfs
 
 The filesystem will initially be mounted read-only to minimize changes to the target.
 
----
+------
 
 ## 5. FTP Enumeration
 
@@ -219,7 +219,7 @@ sudo nmap -sV -p 2121 172.30.1.21
 
 **ProFTPD 1.3.1 is an extremely old release and should be investigated for known vulnerabilities and insecure configuration.**
 
----
+------
 
 ## 6. Apache Tomcat Enumeration
 
@@ -266,7 +266,7 @@ The web application can also be accessed from the Kali system:
 http://172.30.1.21:8180
 ```
 
----
+------
 
 ## 7. Root Bindshell
 
@@ -284,7 +284,7 @@ Nmap specifically identified this service as the Metasploitable root shell.
 
 This service will be treated as a known vulnerability within the lab and documented separately from vulnerabilities discovered through independent enumeration.
 
----
+------
 
 ## 8. Other Identified Attack Surface
 
@@ -352,7 +352,7 @@ UnrealIRCd is known to have historical security vulnerabilities and is therefore
 
 *Severity ratings are preliminary and will be refined as additional enumeration and validation are performed.*
 
----
+------
 
 ## 10. Methodology
 
@@ -386,7 +386,7 @@ Validation
 
 The goal is to understand not only how a vulnerability can be exploited, but also how the vulnerability could be detected and remediated from a defensive security perspective.
 
----
+------
 
 ## 11. Blue Team Perspective
 
@@ -402,7 +402,7 @@ For each vulnerability identified, the project will attempt to answer:
 
 This approach connects penetration testing with SOC and incident-response practices.
 
----
+------
 
 ## 12. Planned Next Steps
 
@@ -428,7 +428,7 @@ This approach connects penetration testing with SOC and incident-response practi
 - [ ] Validate remediation
 - [ ] Complete final penetration-testing report
 
----
+------
 
 ## 13. Tools Used
 
@@ -443,7 +443,7 @@ This approach connects penetration testing with SOC and incident-response practi
 
 **Additional tools will be documented as they are introduced into the assessment.**
 
----
+------
 
 ## 14. Key Lessons Learned
 
@@ -469,7 +469,7 @@ demonstrates how an insecure configuration can create substantial risk even with
 
 Identifying a vulnerability is only part of a security assessment. Understanding detection, remediation, and validation provides a more complete picture of the security problem.
 
----
+------
 
 ## Disclaimer
 
