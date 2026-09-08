@@ -406,13 +406,13 @@ This approach connects penetration testing with SOC and incident-response practi
 
 ## 12. Planned Next Steps
 
-- [ ] Identify target
-- [ ] Perform aggressive Nmap scan
-- [ ] Identify operating system
-- [ ] Enumerate exposed services
-- [ ] Enumerate NFS exports
-- [ ] Confirm Tomcat service
-- [ ] Identify SMB security configuration
+- [x] Identify target
+- [x] Perform aggressive Nmap scan
+- [x] Identify operating system
+- [x] Enumerate exposed services
+- [x] Enumerate NFS exports
+- [x] Confirm Tomcat service
+- [x] Identify SMB security configuration
 - [ ] Safely mount and inspect NFS export
 - [ ] Enumerate SMB shares
 - [ ] Validate FTP service/banner
