@@ -1,0 +1,12 @@
+# Nmap 7.99 scan initiated Mon Sep  7 23:18:07 2026 as: /usr/lib/nmap/nmap -p 111,2049 --script nfs-showmount -oN reconnaissance/nmap-nfs-enumeration.txt 172.30.1.21
+Nmap scan report for 172.30.1.21
+Host is up (0.00046s latency).
+
+PORT     STATE SERVICE
+111/tcp  open  rpcbind
+| nfs-showmount: 
+|_  / *
+2049/tcp open  nfs
+MAC Address: 08:00:27:39:1D:40 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Mon Sep  7 23:18:07 2026 -- 1 IP address (1 host up) scanned in 0.98 seconds
